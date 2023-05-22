@@ -1,0 +1,5 @@
+name: param2sink
+version: 0.1.0
+libraryPathDependencies:
+  - codeql-javascript
+extractor: javascript

@@ -1,0 +1,1135 @@
+Package,Function,Parameter,Parameter Doc,Sink,Unusual,PR,Comments,Determined By
+@actions/io,mv,dest,,TaintedPath,,,,
+@actions/io,mv,source,,TaintedPath,,,,
+@actions/tool-cache,cacheDir,arch,,TaintedPath,yes,https://github.com/actions/toolkit/pull/1139,arch is used as part of path,param
+@admin-interface/core,configParser,dirname,,TaintedPath,,,,
+@admin-interface/core,yamlConfigParse,configFile,,TaintedPath,,,,
+@adobe/create-aio-lib,removeDotGitFolder,repoFolder,,TaintedPath,,,,
+@alexa-games/sfb-skill,loadSnippets,locale,Current locale.,TaintedPath,,,,
+@alexa-games/sfb-skill,setupFFMPEGbin,workingDir,,TaintedPath,,,,
+@amagaki/amagaki,moveFileAsync,afterPath,,TaintedPath,,,,
+@amagaki/amagaki,readYaml,podPath,,TaintedPath,,,,
+@amagaki/amagaki-plugin-page-builder,buildPartialElement,partial,,TaintedPath,,,,
+@angular-devkit/core,read,path,,TaintedPath,,,,
+@angular/devkit-repo,stat,path,,TaintedPath,,,,
+@api3/airnode-validator,convertJson,templatePath,,TaintedPath,,,,
+@app-config/encryption,deleteLocalKeys,keychain,,TaintedPath,,,,
+@app-config/monorepo,initializeLocalKeys,revocationCert,,TaintedPath,,,,
+@applitools/test-server,testServer,key,,TaintedPath,,,,
+@appworks/common-service,getFolderExistsTime,folderPath,,TaintedPath,,,,
+@aragon/toolkit,deployContract,artifactName,,TaintedPath,,,,
+@aragon/toolkit,deployContract,artifactPackage,,TaintedPath,,,,
+@asymmetrik/fhir-qb,QueryBuilder,packageName,,TaintedPath,,,,
+@author.io/metadoc-plugin,walk,directory,,TaintedPath,,,,
+@autorest/testmodeler,loadAvailableTestResources,fileRoot,,TaintedPath,,,,
+@autorest/testmodeler,loadTestResourcesFromConfig,fileRoot,,TaintedPath,no,,,param+func
+@azure/oad,compareTags,newSwagger,,TaintedPath,,,,
+@azure/storage-blob,uploadFileToBlockBlob,filePath,,TaintedPath,,,,
+@bitovi/velocirender,@bitovi/velocirender,pth,,TaintedPath,no,,velocirender renders from a HTML file (`pth` is abbreivation for path),param+README
+@blog/api,persistApi,apiPath,,TaintedPath,,,,
+@botonic/nlp,load,path,,TaintedPath,no,,,param+func
+@bugsnag/electron-filestore,deleteMinidump,eventPath,,TaintedPath,,,,
+@butlerlogic/common-api,replyWithError,message,,ReflectedXss,yes,,,param+func
+@bytedance/mona-shared,readConfig,filename,,TaintedPath,,,,
+@caerusjs/monorepo,createFile,path,,TaintedPath,,,,
+@cityofboston/hapi-common,register,queriesDirPath,,TaintedPath,,,,
+@ckeditor/ckeditor5-dev-utils,checkout,branchName,Name of the branch to checkout.,CommandInjection,yes,,,param
+@ckeditor/ckeditor5-dev-utils,isFile,path,,TaintedPath,no,,,param+func
+@ckeditor/ckeditor5-dev-utils,shExec,command,"The command to be executed.
+",CommandInjection,,,,
+@clusterio/lib,queryLog,logDirectory,"path to directory with logs.
+",TaintedPath,,,,
+@codotype/runtime,readFile,filepath,,TaintedPath,,,,
+@conga/annotations,registerAnnotation,path,,TaintedPath,no,,,param+README
+@corenode/pkg-manager,canPublish,packagePath,,TaintedPath,,,,
+@coreui/react-docs,@coreui/react-docs,directory,,TaintedPath,no,,,param
+@cumulus/test-data,loadTestData,name,,TaintedPath,,,,
+@danielwii/asuna-node-server,regInitializer,config,,ReflectedXss,yes,,,param+func
+@databases/migrations-base,delete,filename,,TaintedPath,,,,
+@deepkit/core-node,getJobConfig,rootDir,,TaintedPath,,,,
+@dendronhq/common-server,file2Schema,fpath,,TaintedPath,,,,
+@dendronhq/common-server,getGitProviderOwnerAndRepositoryFromGitConfig,uri,,TaintedPath,,,,
+@deskpro/apps-dpat,appVersion,projectDir,,TaintedPath,,,,
+@diez/mono,cliRequire,plugin,,TaintedPath,no,,nodejs cli `require(plugin)`,func+README
+@directus/drive,getStat,location,,TaintedPath,,,,
+@easy-team/easywebpack-cli,getEasyInstallPackage,name,,TaintedPath,,,,
+@easy-team/easywebpack-cli,updatePackageFile,fileDir,,TaintedPath,no,,,param+func+package
+@egodigital/egoose,isFIFOSync,path,,TaintedPath,,,,
+@egodigital/egoose,isSymLink,path,,TaintedPath,no,,,param+func
+@electron-forge/test-utils,expectProjectPathExists,dir,,TaintedPath,,,,
+@electron/fuses,getCurrentFuseWire,pathToElectron,,TaintedPath,,,,
+@endo/daemon,start,cachePath,,TaintedPath,no,,,param
+@epispot/epijs,plot,title,"The title of the graph.
+",ReflectedXss,yes,,,param+func+param doc
+@evervault/sdk,cagify,cageName,,CommandInjection,,,,
+@f5devcentral/f5-cloud-libs,getCloudProvider,name,"Name of the provider
+",TaintedPath,,,,
+@f5devcentral/f5-cloud-libs,symmetricEncrypt,publicKeyDataOrFile,"Either the public key, or the full path to
+a file containing the public key. The symmetric
+key will be encrypted with this key.
+",TaintedPath,,,,
+@f5devcentral/f5-cloud-libs,writeDataToFile,file,"The file to write to
+*",TaintedPath,,,,
+@favware/yamlreader,readYaml,filepath,,TaintedPath,,,,
+@finastra/nestjs-oidc,user,userinfo,,ReflectedXss,yes,,,param+func
+@finastra/nestjs-oidc,user,userinfo,,ReflectedXss,yes,,,param+func
+@finastra/nestjs-oidc,user,userinfo,,ReflectedXss,yes,,,param+func
+@foal/core,render,dirname,,TaintedPath,no,,,param+func
+@frctl/core,describe,dir,,TaintedPath,,,,
+@google-cloud/nodejs-repo-tools,getRepoPath,cwd,,TaintedPath,no,,,param+func
+@google-cloud/nodejs-repo-tools,load,filename,,TaintedPath,,,,
+@google-cloud/nodejs-repo-tools,spawnAsyncWithIO,cwd,,TaintedPath,no,,,param+func
+@google-cloud/storage,upload,pathString,"The fully qualified path to the file you
+wish to upload to your bucket.
+",TaintedPath,,,,
+@gourmet/send-content,sendContent,content,,ReflectedXss,no,,,param+func
+@gourmet/storage-fs,stat,path,,TaintedPath,,,,
+@gql2ts/util,writeToFile,fileName,,TaintedPath,,,,
+@gqlapp/upload-server-ts,save,location,,TaintedPath,,,,
+@haul-bundler/core,resolveModule,name,,TaintedPath,,,,
+@haventech/amorphic,getTemplates,appPath,"The path for app files.
+",TaintedPath,,,,
+@haventech/amorphic,listen,appDirectory,"unknown
+",TaintedPath,no,,,param
+@haventech/amorphic-framework,startPersistorMode,appDirectory,"unknown
+",TaintedPath,no,,,param
+@hilesystem/local,fileIsExecutable,t,,TaintedPath,,,,
+@hilesystem/local,getStatus,e,,TaintedPath,,,,
+@hilesystem/local,listContents,t,,TaintedPath,,,,
+@hilesystem/local,move,t,,TaintedPath,no,,,func
+@hint/utils-fs,isDirectory,directoryPath,,TaintedPath,,,,
+@hint/utils-fs,readFile,filePath,,TaintedPath,,,,
+@igniteui/cli-core,queuePackage,packageName,,CommandInjection,,,,
+@imqueue/rpc,writeFile,path,,TaintedPath,,,,
+@iobroker/create-adapter,executeCommand,cwd,,TaintedPath,,,,
+@iobroker/create-adapter,readTextFile,fileName,,TaintedPath,no,,,param+func
+@iobroker/db-base,loadDatasetFile,datasetName,"Filename of the file to load
+",TaintedPath,,,,
+@iobroker/js-controller-cli,streamChange,path,"The file to stream
+",TaintedPath,,,,
+@ionic/app-scripts,getSystemText,userRootDir,,TaintedPath,,,,
+@ionic/app-scripts,processDirectiveRequest,ngModulePath,,TaintedPath,,,,
+@ionic/utils-fs,pathAccessible,filePath,,TaintedPath,,,,
+@ionic/utils-fs,writeStreamToFile,destination,,TaintedPath,,,,
+@jenkins-blueocean/js-builder,warnOnMissingDependency,depName,,TaintedPath,yes,,,param+func
+@jenkins-cd/js-builder,findClosest,fileName,"The file name to look for.
+",TaintedPath,no,,,param+func
+@jfrog/jfrog-azure-devops-extension,configureDefaultJfrogServer,workDir,"Working directory.
+",TaintedPath,,,,
+@jfrog/jfrog-azure-devops-extension,removeExtractorsDownloadVariables,workDir,,TaintedPath,,,,
+@jfrog/tasks-utils,executeCliCommand,runningDir,,TaintedPath,,,,
+@jfrog/tasks-utils,useCliServer,buildDir,,TaintedPath,no,,,param+func
+@jupyterlab/buildutils,getLernaPaths,basePath,,TaintedPath,,,,
+@kartotherian/jobprocessor,fileParser,filepath,,TaintedPath,,,,
+@kgryte/gitattributes,cp,dest,".gitattributes destination directory
+",TaintedPath,,,,
+@kosko/monorepo,loadFile,path,,TaintedPath,,,,
+@kubernetes-models/export-map,generate,ignoreFile,,TaintedPath,,,,
+@lerna-test/pkg-matchers,toHaveExecutables,received,,TaintedPath,,,,
+@lerna-test/show-commit,showCommit,cwd,,TaintedPath,no,,,param+func
+@lerna/npm-install,npmInstallDependencies,manifestLocation,,TaintedPath,,,,
+@lerna/npm-publish,npmPublish,tarFilePath,,TaintedPath,no,,,param+func
+@loopback/repository,defineModelClass,name,,CodeInjection,yes,,,param+func+func doc
+@lumieducation/h5p-monorepo,createSingleBundle,contentId,"a content id that can be found in the content repository
+passed into the constructor
+",TaintedPath,,,,
+@lumieducation/h5p-server,h5pfs,librariesPath,,TaintedPath,,,,
+@machinelabs/core,parseMlYamlFromPath,path,,TaintedPath,,,,
+@makenova/nodeginx,removeSite,site,,CommandInjection,,,,
+@metaexplorer/editor-dev-server,copyDir,dest,,TaintedPath,,,,
+@metaexplorer/editor-dev-server,mkdir,dir,,TaintedPath,,,,
+@microsoft/api-extractor,loadConfigAndInvoke,configFilePath,,TaintedPath,,,,
+@microsoft/marked-schema,getExampleForProperty,example,,TaintedPath,,,,
+@microsoft/teamsfx-core,installExtension,backendRoot,,TaintedPath,,,,
+@mojaloop/central-services-shared,createParticipantTopicConf,template,"The template for that needs to be populated
+",CodeInjection,no,,kafka topic template to be filled by mustache,param+param doc+filename
+@naturacosmeticos/node-base,onInvalidAuthorization,error,,ReflectedXss,yes,,sending error message,param+func
+@nexrender/provider-gs,upload,src,,TaintedPath,,,,
+@nimbella/nimbella-deployer,readProject,projectPath,,TaintedPath,,,,
+@nishans/markdown,parseFile,path,,TaintedPath,,,,
+@node-wot/binding-websockets,WebSocketServer,serverKey,,TaintedPath,,,,
+@nodearch/core,findUp,searchPath,,TaintedPath,,,,
+@nohost/router,writeError,stack,,ReflectedXss,yes,,,param+func
+@nohost/server,writeError,stack,,ReflectedXss,yes,,,param+func
+@now/build-utils,runNpmInstall,destPath,,TaintedPath,,,,
+@now/build-utils,runShellScript,fsPath,,CommandInjection,,,,
+@nrwl/workspace,copyFile,file,,TaintedPath,,,,
+@nrwl/workspace,updatePackagesInPackageJson,migrationFilePath,,TaintedPath,,,,
+@nx-console/vscode/tasks,selectGenerator,workspacePath,,TaintedPath,no,,,param+func
+@okiss/utils,runRule,o,,CodeInjection,yes,,very generic name,unclear
+@okta/okta-auth-js,setEnvironmentVarsFromTestEnv,currDir,,TaintedPath,,,,
+@openintegrationhub/webhooks,sendResponse,body,,ReflectedXss,no,,,param+func
+@osd/config,createDefault,repoRoot,,TaintedPath,no,,,param+func
+@overnightjs/logger,CheckExists,filePath,,TaintedPath,no,,,param+func
+@parcel/cache,hasLargeBlob,key,,TaintedPath,,,,
+@parcel/fs,exists,filePath,,TaintedPath,no,,,param+func
+@parcel/package-manager,install,from,,TaintedPath,no,,annotated as FilePath,param+func
+@pattern-lab/live-server,start,httpsModule,,TaintedPath,,,,
+@pivotal-tools/jvm-launch-utils,findJdk,javaHome,,TaintedPath,,,,
+@pkgr/utils,findUp,searchFile,,TaintedPath,,,,
+@pkgr/utils,tryFile,filePath,,TaintedPath,,,,
+@plugcore/core,fileOrFolderExists,folderPath,,TaintedPath,,,,
+@plugcore/core,removeFile,filePath,,TaintedPath,,,,
+@pnpm/exportable-manifest,makePublishManifest,dir,,TaintedPath,,,,
+@pnpm/read-project-manifest,readProjectManifestOnly,projectDir,,TaintedPath,,,,
+@pollyjs/node-server,getRecording,recording,,TaintedPath,,,,
+@polymer/gen-typescript-declarations,generateDeclarations,rootDir,,TaintedPath,,,,
+@prairielearn/html-ejs,renderEjs,template,,CodeInjection,no,,template engine for HTML (`template` is raw string),param+func+func doc
+@project-watchtower/server,existsSync,file,,TaintedPath,,,,
+@project-watchtower/server,getFileSize,filePath,,TaintedPath,,,,
+@public-js/fs-ext,forEachFile,dir,,TaintedPath,,,,
+@pushcorn/hocon-parser,getClass,name,,TaintedPath,,,,
+@pushrocks/smartenv,getSafeNodeModule,moduleNameArg,,CodeInjection,yes,,,param
+@pushrocks/smartshell,execAndWaitForLine,commandStringArg,,CommandInjection,no,,"explained in docstring: ""executes a command""",param+func doc
+@reactant/core,install,platformName,,TaintedPath,,,,
+@redwoodjs/internal,prebuildApiFile,srcPath,,TaintedPath,,,,
+@restlessness/core,copyFile,source,,TaintedPath,,,,
+@restlessness/utilities,load,packageName,,TaintedPath,,,,
+@rnv/sdk-android,packageAndroid,c,,CommandInjection,yes,,,unclear
+@rnv/sdk-apple,packageBundleForXcode,c,,CommandInjection,yes,,,unclear
+@rnv/sdk-apple,runXcodeProject,c,,CommandInjection,,,,
+@robmcelhinney/qr-file-share,@robmcelhinney/qr-file-share,base_path,,ReflectedXss,yes,,,param+func
+@rushstack/node-core-library,createSymbolicLinkFileAsync,newLinkPath,,TaintedPath,,,,
+@rushstack/node-core-library,getLinkStatisticsAsync,path,,TaintedPath,no,,,param+func
+@rushstack/node-core-library,loadAndValidate,jsonFilename,,TaintedPath,,,,
+@rushstack/node-core-library,loadAndValidateWithCallbackAsync,jsonFilename,,TaintedPath,,,,
+@rushstack/node-core-library,move,destinationPath,,TaintedPath,,,,
+@rushstack/node-core-library,readFileToBuffer,filePath,The relative or absolute path to the file whose contents should be read.,TaintedPath,,,,
+@rushstack/node-core-library,readFolderAsync,folderPath,,TaintedPath,,,,
+@rushstack/node-core-library,readFolderItemNamesAsync,folderPath,,TaintedPath,,,,
+@rushstack/node-core-library,updateTimes,path,"The path of the file that should be modified.
+",TaintedPath,no,,,param+func+param doc+func doc
+@rushstack/rig-package,tryResolveConfigFilePath,configFileRelativePath,,TaintedPath,,,,
+@rxts/pkgr,tryExtensions,filepath,,TaintedPath,,,,
+@seagull/mock-s3,S3MockFS,localFolder,,TaintedPath,,,,
+@seagull/routes,html,data,,ReflectedXss,no,,send a whole html page,param+func doc
+@shutter/core,createShutter,testsDirectoryPath,,TaintedPath,,,,
+@sifrr/dev,@sifrr/dev,changelogFile,,TaintedPath,,,,
+@sifrr/dev,exec,command,,CommandInjection,,,,
+@simplr/mvdir,move,to,,TaintedPath,no,,package name is mvdir,func+package
+@sitecore-jss/sitecore-jss-dev-tools,mergeFs,rootPath,,TaintedPath,,,,
+@skalenetwork/ima-artifacts,getArtifacts,deployment,,TaintedPath,,,,
+@slynova/flydrive,delete,location,,TaintedPath,,,,
+@slynova/flydrive,put,location,,TaintedPath,,,,
+@spaship/common,read,_filepath,,TaintedPath,,,,
+@supercharge/framework,payload,payload,,ReflectedXss,no,,just serve a payload,param+func
+@superfaceai/one-sdk,loadCached,path,,TaintedPath,,,,
+@techmely/utils,copyDir,destDir,,TaintedPath,,,,
+@theia/ffmpeg,hashFile,filePath,,TaintedPath,,,,
+@theopenweb/chrome-history-helper,downloadHistoryData,csvUrl,,TaintedPath,,,,
+@tinacms/graphql,buildSchema,rootPath,,TaintedPath,,,,
+@tinacms/graphql,documentExists,fullpath,,TaintedPath,,,,
+@tractor/file-structure,createDirIfMissing,directoryPath,,TaintedPath,,,,
+@truffle/box,unbox,destination,,TaintedPath,,,,
+@truffle/external-compile,processTarget,cwd,,TaintedPath,no,,,param+README
+@trustcerts/signature-create,signFile,filePath,,TaintedPath,,,,
+@tscmono/root,findPackageJson,pwd,,TaintedPath,,,,
+@tscmono/root,treeNodeToTSConfig,projectPath,,TaintedPath,no,,,param+param doc+func doc
+@useoptic/openapi-io,parseOpenAPIFromRepoWithSourcemap,branch,,CommandInjection,,,,
+@useoptic/openapi-io,parseOpenAPIFromRepoWithSourcemap,repoPath,,TaintedPath,,,,
+@vercel/build-utils,getNodeBinPath,cwd,,TaintedPath,,,,
+@vercel/build-utils,scanParentDirs,destPath,,TaintedPath,,,,
+@verdaccio/config,parseConfigFile,configPath,,TaintedPath,,,,
+@verdaccio/middleware,final,body,,ReflectedXss,yes,,debatable: client would know this is related to HTTP response which `body` also indicates,param+func
+@vimesh/orm,setupOrm,migrationsDir,,TaintedPath,no,,,param+func
+@vimesh/storage,createCacheForScopedStorage,cacheDir,,TaintedPath,no,,,param+func
+@vimesh/storage,getFullLocalStat,localFilePath,,TaintedPath,,,,
+@vimesh/storage,getObjectAsFile,localFilePath,,TaintedPath,no,,,param+func
+@vitjs/core,writeFile,path,,TaintedPath,no,,,param+file
+@wdio/cli,Launcher,_configFilePath,,TaintedPath,,,,
+@webfx/root,create,path,,TaintedPath,,,,
+@whitecolor/yall,watchAll,execAfter,,CommandInjection,,,,
+@yarnpkg/core,fromFile,path,,TaintedPath,,,,
+1pif-to-csv,1pif-to-csv,file,,TaintedPath,,,,
+aaa-backend-stack,listFiles,directory,,TaintedPath,,,,
+abacus-eval,xevalfn,expression,,CodeInjection,no,,explained in function comment,param+func+func doc
+ac-fs,isEmptyFolder,p,,TaintedPath,no,,,param+func
+ac-fs,unlink,p,,TaintedPath,,,,
+accelerated.api,useModules,dirnameOverride,,TaintedPath,,,,
+accessibility-insights-scan,scan,sourcePath,,TaintedPath,no,,,param+func
+ack-sass,compileFile,outFilePath,,TaintedPath,,,,
+addjs,build,output,,TaintedPath,,,,
+addjs,start,dir,,TaintedPath,,,,
+adir,startDirectoryAggregation,path,"Root directory to start iterating on.
+",TaintedPath,no,,,param+func+param doc
+adm-zip,adm-zip,inPath,,TaintedPath,,,,
+affiance,createContext,hookType,,TaintedPath,,,,
+affiance,execSync,command,,CommandInjection,no,,,param+func
+affiance,gitDir,repoDir,,TaintedPath,,,,
+Agent.Tasks,downloadArchive,downloadPath,,CommandInjection,,,,
+ajs,_load,filename,"The path to the file.
+",TaintedPath,,,,
+alchemyapi_node,image_keywords,data,,TaintedPath,,,,
+allto-json,xml_json_file,file,,TaintedPath,no,,,param+func
+amagaki-project,writeFileAsync,podPath,,TaintedPath,,,,
+ambc,output,o,,TaintedPath,,,,
+amplify-cli,add,providerName,,TaintedPath,,,,
+amplify-cli,initializeAmplifyConfiguration,destDir,,TaintedPath,,,,
+amplify-codegen,createNewProjectDir,prefix,,TaintedPath,,,,
+amplify-codegen,getFunctionSrc,name,,TaintedPath,,,,
+amplify-codegen,overrideFunctionCode,name,,TaintedPath,,,,
+amplify-codegen,overrideFunctionSrc,root,,TaintedPath,,,,
+amplify-codegen,updateConfig,projectName,,TaintedPath,,,,
+amplify-codegen-e2e-core,readJsonFile,jsonFilePath,,TaintedPath,,,,
+amplify-codegen-e2e-core,updateSchema,projectDir,,TaintedPath,,,,
+and-cli,add,pathspecs,,CommandInjection,,,,
+and-cli,commit,message,,CommandInjection,,,,
+and-cli,isCloned,prefix,optional prefix,TaintedPath,,,,
+annotations,getSync,filename,,TaintedPath,,,,
+antlr4-graps,loadGrammar,fileName,,TaintedPath,no,,,param+func
+any2api-util,extract,dir,,TaintedPath,,,,
+anytojson,csv,path,,TaintedPath,,,,
+app,app,path,,TaintedPath,,,,
+app,parse,text,,CodeInjection,yes,,(AnitaTsai/WeGossip) json parse,param+func
+app_modules,init,modulesDirectory,,TaintedPath,,,,
+app_modules,init,projectRoot,,TaintedPath,,,,
+appc-logger,createHttpLogger,logs,,TaintedPath,,,,
+appworks,downloadMaterialTemplate,template,,TaintedPath,,,,
+ar.js,read,filename,,TaintedPath,,,,
+ardrone-autonomy,log,path,,TaintedPath,,,,
+arsenal,addFile,filePath,"file path containing JSON
+authentication info (see {@link addAccounts()} for format)
+",TaintedPath,,,,
+asar,extractAll,dest,,TaintedPath,,,,
+assemble-handlebars,compile,str,,CodeInjection,no,,,param+func
+asset-frequency-graph,asset-frequency-graph,destination,,TaintedPath,,,,
+atelier,read,path,,TaintedPath,,,,
+attachments-preprocessor-im,process,filename,,TaintedPath,,,,
+audio-to-text,audio2Text,file,"文件路径
+",TaintedPath,no,,,param+func+param doc
+auth0-source-control-extension-tools,loadFile,file,,TaintedPath,,,,
+auto-load,autoload,baseDirectory,,TaintedPath,,,,
+avsc,createFileEncoder,path,,TaintedPath,,,,
+aws-xray-sdk-node,setAWSWhitelist,source,"The path to the custom whitelist file, or a whitelist source JSON object.
+",TaintedPath,no,,explained in docstring: source is filepath,param+param doc
+aws-xray-sdk-node,setLocalRules,source,,TaintedPath,,,,
+aws-xray-sdk-node,setSamplingRules,source,"The path to the custom sampling rules file, or the source JSON object.
+",TaintedPath,no,,explained in docstring,param+param doc
+azure-pipelines-task-lib,_checkPath,p,,TaintedPath,,,,
+azure-pipelines-task-lib,_which,tool,,TaintedPath,,,,
+azure-pipelines-task-lib,cp,source,,TaintedPath,,,,
+azure-pipelines-task-lib,mv,options,,TaintedPath,,,"explained in docstring: options is string -r, -f or -rf for recursive and force",
+azure-pipelines-tool-lib,cacheDir,sourceDir,,TaintedPath,,,,
+azure-storage,createAppendBlobFromLocalFile,localFileName,"The local path to the file to be uploaded.
+",TaintedPath,,,,
+babel,babel,loc,,TaintedPath,,,,
+babel-compile,transformDirectorySync,outDir,,TaintedPath,no,,,param+func
+backendjs,getFile,file,,TaintedPath,,,,
+backfill-repo,setupFixture,fixtureName,,TaintedPath,yes,,in test code (fixture is some kind of directory),param
+bananenbase,addModule,name,,TaintedPath,,,,
+basys,lint,projectDir,,TaintedPath,no,,,param
+beame-sdk,createDir,dirPath,,TaintedPath,,,,
+beame-sdk,importCredentials,file,"path to file with encrypted credentials
+",TaintedPath,,,,
+beame-sdk,saveFileAsync,dirPath,,TaintedPath,,,,
+beeline,staticFile,filePath,,TaintedPath,,,,
+beezlib,cp,src,"コピー元のファイルパス
+",TaintedPath,,,,
+beezlib,hbs2hbsc2html,hbsfile,"src hbs file name
+",TaintedPath,,,,
+bem,fsWalkTreeCb,root,,TaintedPath,,,,
+bem,getTechClass,module,"Path to tech module or module object.
+",TaintedPath,,,,
+bfile,copy,dest,,TaintedPath,,,,
+bin-build,directory,dir,,TaintedPath,,,,
+bingo-builder,build,filepath,,TaintedPath,,,,
+blazepack,detectTemplate,directory,,TaintedPath,,,,
+blender,convert,destDir,,TaintedPath,,,,
+Blot,walk,dir,,TaintedPath,no,,,param+file
+boll,inFixtureDir,dir,,TaintedPath,,,,
+botbuilder,handleError,message,,ReflectedXss,yes,,sending error message,param+func
+bottlenose,fromFile,filePath,,TaintedPath,,,,
+bower,readSync,file,,TaintedPath,,,,
+bpmn,addBpmnFilePath,processHandler,,TaintedPath,,,,
+broccoli-file-mover,write,destDir,,TaintedPath,,,,
+broccoli-filter,processFile,relativePath,,TaintedPath,no,,,param+func
+broccoli-handlebars,writeTemplateSync,targetFile,,TaintedPath,no,,,param+func
+broccoli-kitchen-sink-helpers,hashTree,fullPath,,TaintedPath,,,,
+broccoli-kitchen-sink-helpers,symlinkOrCopyPreserveSync,sourcePath,,TaintedPath,,,,
+broccoli-static-compiler,write,destDir,,TaintedPath,,,,
+broccoli-terser-sourcemap,processFile,inFile,,TaintedPath,,,,
+browserify,transform,tr,,TaintedPath,yes,,,param+func
+buffered-spawn,buffered,command,,CommandInjection,no,,,param
+build-config,stream,filename,,TaintedPath,,,,
+buster-test,load,reporter,,TaintedPath,,,,
+bytenode,compileCode,javascriptCode,"JavaScript source that will be compiled to bytecode.
+",CodeInjection,no,,,param+func+param doc
+cacache,copyByDigest,dest,,TaintedPath,,,,
+cacache,stream,cache,,TaintedPath,,,,
+cache-swap,removeCached,category,,TaintedPath,,,,
+cardano-graphql,loadQueryNode,name,,TaintedPath,,,,
+cartero,applyPostProcessorsToFiles,filePaths,,TaintedPath,,,,
+cf-abacus,plan,rpid,,TaintedPath,,,,
+cfdi,certificar,certificado,,TaintedPath,,,,
+cfdi-to-json,extractGeneralData,path,,TaintedPath,no,,,param+func
+checksum,checksumFile,filename,,TaintedPath,,,,
+child-process-async,exec,command,,CommandInjection,no,,,param+func
+child-process-async,spawn,command,,CommandInjection,,,,
+chumpi,read,dir,,TaintedPath,,,,
+ci_monitor,say,sentence,,CommandInjection,,,,
+ckeditor5-dev,getStatus,repositoryPath,"Absolute path to repository.
+",CommandInjection,yes,,,param+func+param doc
+ckeditor5-dev,isSymlink,path,,TaintedPath,,,,
+cli-rewire,run,cmd,"Name of the executable to run
+",CommandInjection,,,,
+clmtrackr,Tbinop,cc,,CodeInjection,yes,,vague name,unclear
+closure-builder,copyFile,src,,TaintedPath,,,,
+cloudinary,optionalRequire,moduleName,,TaintedPath,,,,
+cluc,ensureEmptyDir,path,,TaintedPath,,,,
+cluc,ensureEmptyDirSudo,path,,TaintedPath,,,,
+cluc,generateTemplate,localPath,,TaintedPath,,,,
+cluc,mkdirSudo,path,,TaintedPath,no,,,param+func
+clusterpost,removeDirectorySync,dirpath,,TaintedPath,,,,
+clusterpost-lib,uploadFile,filename,,TaintedPath,,,,
+cmake-js,execFile,0,,CommandInjection,,,,
+cmd-shim,cmdShimIfExists,to,,TaintedPath,,,,
+co-fs-plus,readdir,path,,TaintedPath,,,,
+cobolscript,compileTemplateFile,filename,,TaintedPath,,,,
+codewind-filewatcher,createWatcher,logDir,,TaintedPath,,,,
+cody,cody,sitename,,TaintedPath,,,,
+coinstac,unlinkFiles,runId,"run to unlink
+",TaintedPath,,,,
+combohandler,respondMiddleware,body,,ReflectedXss,no,,,param+func
+compare-size,compare-size,b,,TaintedPath,,,,
+compat-tester,htmlFileAnalyzer,filePath,,TaintedPath,,,,
+compile-sass,compileSassAndSave,cssPath,,CommandInjection,yes,,,param+func
+compile-sass,setupCleanupOnExit,cssPath,,TaintedPath,no,,,param+README
+composer,collectBasicDiagnostics,tmpDirectory,the temporary directory for collecting report output,TaintedPath,,,,
+compromise,streamFile,s,,TaintedPath,,,,
+confax,getConfig,guildID,,TaintedPath,,,,
+config-loader,load,file,,TaintedPath,,,,
+consolidate,consolidate,path,,TaintedPath,,,,
+consolidate,onLoad,path,,TaintedPath,,,,
+convector,readConfig,path,,TaintedPath,no,,,param+func
+conventional-changelog-monorepo,createIfMissing,infile,,TaintedPath,,,,
+copy-concurrently,copyFile,from,,TaintedPath,,,,
+copy-dereference,copyDereferenceSync,dest,,TaintedPath,,,,
+cordova-android,createPlatform,destination,"Destination directory, where insatll platform to
+",TaintedPath,,,,
+cordova-electron,Api,platformRootDir,,TaintedPath,no,,,param
+cordova-lib,runInstall,plugins_dir,,TaintedPath,no,,,param
+cordova-lib,uninstallPlatform,project_dir,,TaintedPath,no,,,param
+cordova-lib,uninstallPlugin,plugins_dir,,TaintedPath,no,,,param
+cortex-shrinkwrap,cortex-shrinkwrap,built_root,,TaintedPath,,,,
+couch-provider,addDocumentAttachment,name,,TaintedPath,,,,
+couch-provider,getDocumentStreamAttachmentUri,name,,TaintedPath,,,,
+couch-provider,removeDirectorySync,dirpath,,TaintedPath,no,,,param+func
+cover,cover,debugDirectory,,TaintedPath,,,,
+cover,hookAndReport,reporterName,,TaintedPath,,,,
+cozy-light,clearRequireCache,modulePath,App path to clear from require cache.,TaintedPath,,,,
+cp,cp,dest,,TaintedPath,no,,,param+func+param doc
+cp-file,cpFile,sourcePath,,TaintedPath,,,,
+create-commun-app,CreateCommunApp,appName,,TaintedPath,,,,
+cross-zip,zip,outPath,,TaintedPath,,,,
+cross-zip,zipSync,inPath,,TaintedPath,,,,
+cspell-lib,writeToFileRxP,filename,,TaintedPath,no,,,param+func
+cspell-monorepo,checkText,filename,,TaintedPath,no,,,param
+cspell-monorepo,isIgnored,file,,TaintedPath,,,,
+cspell-monorepo,readFile,filename,,TaintedPath,,,,
+css-blocks-monorepo,getBlockRelative,fromIdentifier,"The FileIdentifier that references the base location that the
+import path is relative to.
+",TaintedPath,,,,
+css-blocks-monorepo,identifier,importPath,,TaintedPath,,,,
+csv-it,read,file,"The file path of the CSV file.
+",TaintedPath,,,,
+csvgeocode,generate,inFile,,TaintedPath,,,,
+cubejs,deploy,directory,,TaintedPath,,,,
+cyto,writeTemplate,outputRoot,,TaintedPath,no,,,param+func+param doc
+d3node-output,d3node-output,dest,,TaintedPath,no,,,param+func
+danfojs-base,$readJSON,filePath,"URL or local file path to JSON file.
+",TaintedPath,,,,
+dar-server,writeArchive,archiveDir,,TaintedPath,,,,
+dat-share,create,fullDir,"Full path to directory of the dat
+",TaintedPath,,,,
+davos,pack,output,,TaintedPath,,,,
+decentralized-internet,mkdirp,outputdir,,TaintedPath,,,,
+deparser,exportDependencyGraph,exportFilePath,,TaintedPath,,,,
+depcheck,depcheck,rootDir,,TaintedPath,,,,
+deps-report,webpackAliasResolver,webpackConfigFile,,TaintedPath,,,,
+design-system,postcssCompile,inputPath,,CommandInjection,yes,,,param+func
+dialog,run,0,,CommandInjection,no,,the actual parameter is `cmd` (which is used like this: `var bin = cmd[0]`),unclear
+digo,copyDir,from,,TaintedPath,,,,
+digo,copyFileIf,from,,TaintedPath,,,,
+digo,copyLink,from,,TaintedPath,,,,
+digo,deleteDir,path,,TaintedPath,,,,
+digo,deleteFile,path,,TaintedPath,,,,
+digo,readLinkIf,path,,TaintedPath,,,,
+dir-compare,compareAsync,path1,,TaintedPath,,,,
+dish,file,p,,TaintedPath,,,,
+docx-builder,insertDocx,path,,TaintedPath,,,,
+doh,f,condition,,CodeInjection,no,,doh is a unit test lib where condition is a assertion predicate,param+README
+dojo,fromJson,js,,CodeInjection,yes,,only makes sense if you read links listed in README,func
+domoja-core,reloadConfig,arg,,TaintedPath,,,,
+donuts.node-settings,openSettings,name,,TaintedPath,,,,
+dotenv-flow,parse,filenames,"filename or a list of filenames to parse
+",TaintedPath,,,,
+dotjson,get,filename,,TaintedPath,,,,
+dotjson,set,filename,,TaintedPath,,,,
+download.jqueryui.com,isDirectory,filepath,,TaintedPath,,,,
+doxdox-core,isDirectory,path,,TaintedPath,,,,
+doxdox-parser-template,doxdox-parser-template,cwd,,TaintedPath,no,,,param
+doxdox-parser-template,doxdox-parser-template,path,,TaintedPath,,,,
+Dragon,init_pool,mysql_configuration,,TaintedPath,no,,,param+file
+Dragon,normal_handler,body,,ReflectedXss,no,,,param+func
+drp-service-docmgr,LoadDoc,serviceName,,TaintedPath,,,,
+ds-store,write,path,,TaintedPath,no,,,param+func
+dustjs-example-streaming,onLoad,tmpl,,TaintedPath,,,,
+earthstar-pub,serve,dataFolder,,TaintedPath,,,,
+easy-zip2,zipFolder,folder,,TaintedPath,,,,
+easywebpack,getPackageConfig,baseDir,,TaintedPath,,,,
+easywebpack,saveBuildConfig,filepath,,TaintedPath,,,,
+easywebpack-cli,getDefaultInstallPackage,name,,TaintedPath,,,,
+ecstatic,createMiddleware,_dir,,TaintedPath,,,,
+edublocks,CLOSURE_IMPORT_SCRIPT,src,"The script source.
+",TaintedPath,no,,,param+func+param doc
+electrode,reactQueryFeature,serverModule,,TaintedPath,,,,
+electron-updater,list,appDir,,TaintedPath,,,,
+email-templates,exportable,templateDirectory,,TaintedPath,no,,,param+func+package
+ember-cli-i18next,treeFor,name,,TaintedPath,,,,
+ember-photoswipe,resolvePackagePath,packageName,,TaintedPath,no,,,param+func
+ember-watson,transformTestsToAsyncAwait,rootPath,,TaintedPath,,,,
+emotion-monorepo,emotion-monorepo,cases,,TaintedPath,,,,
+empty-dir,emptyDirSync,dir,,TaintedPath,,,,
+encoder,encoder,input,,TaintedPath,,,,
+enum-files,filesRecursively,filepath,"filepath to find.
+",TaintedPath,,,,
+env-smart,parseFile,path,"The path of the env file to parse
+",TaintedPath,no,,,param+func+param doc
+epub-parser,open,filename,,TaintedPath,,,,
+ern-cauldron-api,addFile,localFilePath,,TaintedPath,,,,
+ern-core,existInPath,p,,TaintedPath,no,,,func
+es6-module-transpiler,resolvePath,importedPath,,TaintedPath,,,,
+escpos-buffer,loadImage,filename,,TaintedPath,no,,,param+func
+eslint-import-resolver-jest,resolver,source,,TaintedPath,,,,
+esprima-extract-comments,file,file,,TaintedPath,no,,,param+func
+exceljs,WorkbookWriter,filename,,TaintedPath,,,,
+exec-inline,exec-inline,cmd,,CommandInjection,,,,
+expander,process,lookup,,CodeInjection,yes,,,param+func
+expander,set,lookup,,CodeInjection,yes,,,param+func
+express-handlebars,getTemplates,dirPath,,TaintedPath,,,,
+express-routemap,express-routemap,filename,,TaintedPath,no,,,param
+extended-fs,recurseSync,dir,"Directory to traverse
+",TaintedPath,,,,
+extract-zip,extract-zip,dir,,TaintedPath,,,,
+faasjs-mono,request,file,,TaintedPath,,,,
+fabric-starter-rest,defaultConnectionOptions,org,,TaintedPath,,,,
+fbl,validatePlugins,wd,,TaintedPath,yes,,,param+func
+felix-couchdb,toAttachment,file,,TaintedPath,no,,,param+README
+fetch-vcr,loadFile,root,,TaintedPath,,,,
+ffmpegdotjs,addaudiotovideo,output,,CommandInjection,,,,
+ffmpegdotjs,addoverlayimage,y,,CommandInjection,yes,,,param+func
+ffmpegdotjs,addoverlayimagetime,input2,,CommandInjection,yes,,,param+func
+ffmpegdotjs,addoverlayimagetime,y,,CommandInjection,yes,,,param+func
+ffmpegdotjs,mergevideos,input2,,CommandInjection,,,,
+fie-fs,move,newPath,,TaintedPath,no,,,param+func
+figma-react,loadImageToDisk,fileName,,TaintedPath,no,,,param+func
+figma-react,saveSvgToDisk,fileName,,TaintedPath,,,,
+fiken,addAttachmentToCreditNoteDraftRaw,file,,TaintedPath,,,,
+file-exists,fileExists,filepath,,TaintedPath,no,,,param+func
+file-sync-cmp,equalFiles,pathA,,TaintedPath,,,,
+file-system,mkdirSync,filepath,,TaintedPath,,,,
+fileutil,delete,f,一个或多个文件或文件夹,TaintedPath,,,,
+final-fs,copy,fromPath,,TaintedPath,no,,,param+func
+final-fs,dirFiles,directoryPath,,TaintedPath,no,,,param+func
+final-fs,lchownSync,path,,TaintedPath,,,,
+final-fs,mkdir,path,,TaintedPath,,,,
+final-fs,readlink,path,,TaintedPath,,,,
+final-fs,renameSync,oldPath,,TaintedPath,no,,,param+func
+final-fs,stat,path,,TaintedPath,no,,,param
+final-fs,writeFile,path,,TaintedPath,no,,,param+func
+find-root,findRoot,start,,TaintedPath,,,,
+fis-kernel,del,rPath,,TaintedPath,,,,
+fis-kernel,touch,path,,TaintedPath,no,,,param+func
+fis3,isFile,path,"路径
+",TaintedPath,,,,
+flatsheet,compileView,filepath,,TaintedPath,,,,
+flickr-with-uploads,fromFilepath,credentials_filepath,,TaintedPath,,,,
+flood-element,main,rootPath,,TaintedPath,,,,
+format-package-json,write,file,,TaintedPath,,,,
+fortune-tech,langData,key,,TaintedPath,,,,
+fs-extend,mkdirSync,fullpath,,TaintedPath,,,,
+fs-extend,rmSync,fullpath,,TaintedPath,,,,
+fs-extended,createDirSync,dir,,TaintedPath,,,,
+fs-extended,emptyDirSync,dir,*,TaintedPath,,,,
+fs-extended,moveDirSync,src,,TaintedPath,,,,
+fs-extra,copySync,src,,TaintedPath,,,,
+fs-extra-promise,isDirectory,path,,TaintedPath,,,,
+fs-jetpack,inspectTree,path,,TaintedPath,,,,
+fs-jetpack,moveAsync,from,,TaintedPath,,,,
+fs-kit,isDirectory,path_,,TaintedPath,,,,
+fs-kit,recursiveParentSearch,rightPart,,TaintedPath,no,,dev who use this package would know this is a filesystem lib,param+func+README
+fs-magic,copy,dst,,TaintedPath,,,,
+fs-nextra,copyFileAtomic,destination,,TaintedPath,,,,
+fs-nextra,createSymlinkAtomic,source,,TaintedPath,,,,
+fs-nextra,unTargz,inputFile,,TaintedPath,,,,
+fs-tools,findSorted,pathname,,TaintedPath,,,,
+fs-tools,mkdirSync,path,,TaintedPath,,,,
+fs-updater,constructor,outputPath,,TaintedPath,,,,
+fs-utils,readFile,filepath,,TaintedPath,,,,
+fs2,fs2,dest,,TaintedPath,,,,
+fs2obj,fs2obj,path,,TaintedPath,,,,
+funclib,size,file,": string
+",TaintedPath,,,,
+functionscript,load,functionsPath,,TaintedPath,,,,
+functionscript,load,rootPath,,TaintedPath,,,,
+functionscript,readFiles,rootPath,,TaintedPath,,,,
+gapitoken,GAPI,keyFile,,TaintedPath,no,,,param+README
+garush-storage,loadYaml,fileLocation,,TaintedPath,,,,
+garush-storage,mkdir,path,,TaintedPath,,,,
+garush-storage,mkdirParentFolder,fileName,,TaintedPath,,,,
+gatsby-graphql-source-toolkit,writeCompiledQueries,outputDir,,TaintedPath,,,,
+gatsby-plugin-sharp,getImageSize,absolutePath,,TaintedPath,no,,,param
+gebo-utils,_getSafeFileName,directory,,TaintedPath,,,,
+generate-evb,generate,path2Pack,,TaintedPath,,,,
+generator-jhipster,buildApplication,profile,"dev | prod
+",CommandInjection,,,,
+geoip,City,file,,TaintedPath,no,,,param
+geoip,Country6,file,,TaintedPath,,,,
+gerar-boletos,pdfFile,filename,,TaintedPath,,,,
+git-fs,git-fs,repo,,TaintedPath,,,,
+git-hooks-win,uninstall,workingDirectory,,TaintedPath,no,,,param
+git-issues,fromProvider,providerName,"The provider name (currently supported `""bitbucket""` and `""github""`).
+",TaintedPath,,,,
+git-parse,checkoutCommit,hash,,CommandInjection,,,,
+git-state,untracked,repo,,TaintedPath,,,,
+github-webhook,createServer,log,,TaintedPath,no,,log file for the server,param+README
+gitlog,gitlog,repo,,TaintedPath,,,,
+glimmer-analyzer,Project,projectDir,,TaintedPath,,,,
+gpu.js,alias,name,,CodeInjection,yes,,alias put `name` to another function (although this is probably fine as this is code-related),param+func+func doc
+gql2ts-base,readFile,fileName,,TaintedPath,no,,,param+func
+gqlx-js,readSchemaFromFile,path,,TaintedPath,,,,
+gqlx-js,readSchemaFromFileAsync,path,,TaintedPath,no,,,param+func
+graceful-fs,copyFile,dest,,TaintedPath,,,,
+graphql-ruby-client,sync,apolloCodegenJsonOutput,,TaintedPath,,,,
+grunt-saucelabs,files,dir,,TaintedPath,,,,
+guacamole,addNormalizedBrowsersFromFile,filePath,,TaintedPath,,,,
+gulp-htmlhint,htmlhintPlugin,htmlhintrc,,TaintedPath,no,,,README
+gulp-merge-glue-css,mergeIconCss,iconCssPath,,TaintedPath,,,,
+gulp-pipeline,chmod,from,,TaintedPath,no,,,func
+gulp-pipeline,read,filepath,,TaintedPath,,,,
+gulp-spawn-mocha,gulp-spawn-mocha,cwd,,TaintedPath,,,,
+hardhat,hardhat,dirOut,,TaintedPath,no,,,param
+harp-editor,start,boilerplate,,TaintedPath,,,,
+hash-and-cache,hash-and-cache,execWorkingDirectory,,TaintedPath,,,,
+heroku-exec-util,ssh,dynoUser,,CommandInjection,,,,
+home-config,HomeConfig,filename,,TaintedPath,,,,
+homebridge-plugin-wrapper,HomebridgeWrapper,homebridgeConfigPath,,TaintedPath,no,,,param
+how-to-npm,cpr,from,,TaintedPath,no,,"cpr = ""cp -r""",unclear
+html-wiring,appendStylesDir,sourceStyleDir,,TaintedPath,,,,
+html-wiring,appendToFile,path,,TaintedPath,,,,
+html2js-browserify,html2js-browserify,file,,TaintedPath,,,,
+htmlprocessor,process,filePath,,TaintedPath,,,,
+husky,install,dir,,TaintedPath,no,,,param+func
+hyperproxy,HyperProxy,key,,TaintedPath,no,,from the API doc we know that it is ssl-key for HTTPS connection,param+func doc
+i18next-parser,getCatalog,path,,TaintedPath,,,,
+icejs-project,icejs-project,dir,,TaintedPath,,,,
+id3-writer,Image,file,"Path of the file to work on
+",TaintedPath,,,,
+idoc,copyThemeFileAsset,file,,TaintedPath,no,,,param+func
+image,Stack,imageType,,TaintedPath,,,,
+image-overlayer,overlayImage,imageToOverlayPath,,TaintedPath,,,,
+image-overlayer,overlayImage,origImagePath,,CommandInjection,,,,
+images-grabber,downloadImage,index,Index of image,TaintedPath,,,,
+immutable-css,processFiles,customCssFile,,TaintedPath,,,,
+importer,importer,path,,TaintedPath,,,,
+importer,main,outputDirectory,,TaintedPath,no,,,param
+index-require,index-require,dirname,,TaintedPath,,,,
+indian-ocean,writeDataSync,outPath,,TaintedPath,,,,
+init-skeleton,initSkeleton,alias,"filesystem path or skeleton url
+",TaintedPath,no,,explained in docstring: alias filesystem path or skeleton url,param doc
+inject-client,cmd,command,,CommandInjection,no,,,param+func
+inject-client,exec,command,,CommandInjection,,,,
+injectify,run,command,,CommandInjection,no,,,param+func
+inline,getDataURI,path,,TaintedPath,,,,
+internal-carto.js,execute,sql,,CodeInjection,yes,,sql flows into mustache template,param+func
+is-dir,isDir,path,,TaintedPath,no,,,param+func
+is-progressive,fileSync,filepath,,TaintedPath,,,,
+isexe,isexe,path,,TaintedPath,,,,
+ispriter,run,options,,TaintedPath,no,,"kind of surprising: the package is for writing css file (the `run` only does one thing: calls a function, which states that the param `options` can be a file)",README
+istanbul-coverage-enforcer,enforce,thresholdPath,,TaintedPath,no,,,param
+jacob,elaborateLexFile,tokenfile,,TaintedPath,no,,,param+func
+jade,filter,name,,TaintedPath,,,,
+jason-the-miner,loadConfig,configPath,"The path to the config file
+",TaintedPath,,,,
+javascript-to-typescript,execute,cmd,,CommandInjection,no,,,param+func
+jest-runtime,requireActual,from,,TaintedPath,,,,
+jest-runtime,requireModule,moduleName,,TaintedPath,,,,
+jhipster-core,exportToJDL,path,the path where the file will be written.,TaintedPath,,,,
+jhipster-core,parseFromDir,dir,,TaintedPath,,,,
+jitdb,jitdb,indexesPath,,TaintedPath,no,,,param+func
+jive-sdk,fsTemplateCopy,source,,TaintedPath,,,,
+jive-sdk,fscopy,source,,TaintedPath,,,,
+jive-sdk,prepare,appsDir,,TaintedPath,no,,,param+func
+jive-sdk,recursiveDirectoryProcessor,targetRoot,,TaintedPath,,,,
+jjade,filter,name,,TaintedPath,,,,
+jscpd-monorepo,namespace,name,,TaintedPath,yes,,name of the namespace of the DbStore,param+func
+jscrewit,calculateSolutionType,replacement,,CodeInjection,yes,,jscrewit converts JavaScript code into JSFuck,README
+jslint,load,edition,,TaintedPath,,,,
+json-fs-store,json-fs-store,dir,,TaintedPath,,,,
+json-sql-builder2,SQLBuilder,languageModule,,TaintedPath,,,,
+jsoncan,linkTableUniqueFile,name,,TaintedPath,,,,
+jsoncan,open,name,,TaintedPath,,,,
+jsoncan,queryAll,table,,TaintedPath,,,,
+jsoncan,readAll,table,,TaintedPath,,,,
+jsoncan,readAllTexts,table,,TaintedPath,,,,
+jsoncan,saveSync,table,,TaintedPath,,,,
+jsoncan,writeTableUniqueAutoIncrementFileSync,name,,TaintedPath,,,,
+jspm,Project,projectPath,,TaintedPath,,,,
+jsx-presentation,generate,outDir,,TaintedPath,,,,
+jsxhint,makeIgnores,ignoreFile,"Filename to read ignore list from
+",TaintedPath,,,,
+junit-viewer,parse,fileName,,TaintedPath,,,,
+just-repo,gitHashObject,root,,TaintedPath,,,,
+just-repo-utils,getConfigLoader,folder,,TaintedPath,,,,
+just-scripts-utils,spawn,cmd,,CommandInjection,no,,,param
+kado,StaticServer,root,,TaintedPath,,,,
+kapok-js,Kapok,command,,CommandInjection,no,,,param
+keycloak-connect,Keycloak,keycloakConfig,"Keycloak-specific configuration.
+*",TaintedPath,,,,
+khal,download,destination,,TaintedPath,,,,
+kmc,combo,depFileName,,TaintedPath,,,,
+kminer,shell_read,filename,,TaintedPath,no,,,param+func
+knightjs,knightjs,file,,TaintedPath,,,,
+koa-range,koa-range,body,,ReflectedXss,no,,the client would know as this is a HTTP range request lib,param+README
+koop-localfs,createWriteStream,path,,TaintedPath,,,,
+koop-localfs,readFile,path,,TaintedPath,,,,
+kss-search,loadFile,source,,TaintedPath,,,,
+ktemplate,generateSourceMap,generatedFilePath,"与 sourceMap 相关联的生成文件的路径,
+其中文件名应是主模版文件夹名，在compile方法中生成
+",TaintedPath,no,,,param+param doc
+kubeutils,loadResources,root,,TaintedPath,no,,root=root of the repo,param+func
+kuzzle-proxy,loadPlugin,pluginPath,,TaintedPath,,,,
+lambda-module,lambda-module,templatePath,,TaintedPath,no,,,param
+latte_lib,stat,path,,TaintedPath,no,,,param+func
+law,law,folder,,TaintedPath,,,,
+lazy-require,installAsync,name,,TaintedPath,,,,
+lcov-parse,parse,file,,TaintedPath,no,,,param+func
+lemon-core,create,table,"table-name
+",TaintedPath,,,,
+lerna-monorepo,cliRunner,cwd,,TaintedPath,,,,
+lerna-monorepo,gitInit,cwd,,TaintedPath,,,,
+lerna-monorepo,spawn,command,,CommandInjection,,,,
+lerna-monorepo,symlinkBinary,srcPackageRef,,TaintedPath,,,,
+less-middleware,less-middleware,source,,TaintedPath,no,,,param+README
+libnpx,npx,npxPkg,,TaintedPath,,,,
+libp2p-websocket-star-rendezvous,start,pfx,,TaintedPath,no,,pfx=pfx files,param+README
+libyaml,readFile,filename,,TaintedPath,,,,
+libyaml,writeFileSync,filename,,TaintedPath,,,,
+license-checker,parseJson,jsonPath,,TaintedPath,,,,
+lien,addPage,method,"The request methods to be handled (default: `""all""`) or an object:
+*    - `method` (String): The HTTP method.
+- `before` (Array|Function): A function or an array of middleware functions to be executed *before* the main function.
+- `after` (Array|Function): A function or an array of middleware functions to be executed *after* the main function.
+*",TaintedPath,,,,
+lighthouse4u-fs,read,relPath,,TaintedPath,,,,
+line-reader,open,filenameOrStream,,TaintedPath,no,,,param+func
+linklocal,list,dirpath,,TaintedPath,,,,
+linq,all,predicate,,CodeInjection,yes,,,param+README
+linq,leftJoin,outerKeySelector,,CodeInjection,yes,,linq is a query language for data objects,param+func+README
+linq,pairwise,selector,,CodeInjection,yes,,,param+README
+linq,repeatWithFinalize,finalizer,,CodeInjection,yes,,,README
+linq,toLookup,keySelector,,CodeInjection,yes,,linq is a query language for data objects,param+func+README
+load,load,location,,TaintedPath,no,,,param+func
+local.dev,add,port,,CommandInjection,yes,,,param+func
+locutus,sha1_file,str_filename,,TaintedPath,no,,,param+func
+loopback-connector-mailgun,createFileStream,file,,TaintedPath,,,,
+lsof,rawUdpPort,port,,CommandInjection,yes,,,param+func
+lucy-live,watch,path,,TaintedPath,no,,,param+func
+lwc,getModulePath,name,,TaintedPath,,,,
+magicli-test-machine,execMethodViaCli,cliPath,,CommandInjection,no,,,param+func
+mail-io,exists,path,"The path to check for existence
+*",TaintedPath,no,,,param+func+param doc
+makecode,saveBuiltFilesAsync,dir,,TaintedPath,no,,,param+func
+marge,init,defaultConfigFilePath,,TaintedPath,,,,
+markdown-to-pdf,getFileContent,file,,TaintedPath,,,,
+marked-metadata,MarkedMetaData,file,,TaintedPath,,,,
+mary-poppins,couldYouPlease,taskName,,TaintedPath,,,,
+masonry,masonry,dir,,TaintedPath,,,,
+mathball,mathball,arg,,TaintedPath,,,,
+mathjax,loadModule,a,,CodeInjection,yes,,minified source code,param+func
+mendel-resolver,fileExists,filePath,,TaintedPath,no,,,param+func
+metaschema,loadSchema,fileName,,TaintedPath,,,,
+microcule,requireServiceSync,path,,TaintedPath,,,,
+migrate-to-graph,sqlToGraphCmd,templateFile,,TaintedPath,,,,
+mime,load,file,(String) path of file to load.,TaintedPath,,,,
+mime-sniffer,lookup,file,,TaintedPath,,,,
+Mimic,readConfig,filePath,,TaintedPath,,,,
+mip-extension-validator,validate,path,"路径
+",TaintedPath,,,,
+mira,getStack,fileName,"(Optional) Can provide an arbitary name to
+lookup if name exists in configs.",TaintedPath,,,,
+mjml-core,mjml2html,skeleton,,TaintedPath,,,,
+mkdirp,mkdirP,p,,TaintedPath,,,,
+mkpath,mkpath,dirpath,,TaintedPath,,,,
+ml_edu_js,saveFullTree,path,,TaintedPath,,,,
+mnode,createFile,filePathName,,TaintedPath,,,,
+mnode,readSync,filePath,,TaintedPath,,,,
+mnode,traverseSync,dirPath,,TaintedPath,,,,
+mocha,e,t,,TaintedPath,,,,
+mocha,ui,e,,TaintedPath,yes,,very generic name,
+moment,ha,a,,TaintedPath,,,,
+mongodb-backup,backup,root,,TaintedPath,no,,explained in README,param+README
+mongodbbackup,run,configFile,,TaintedPath,no,,,param
+mongorilla,getModel,collectionName,,TaintedPath,,,,
+monopack-builder,build,mainJs,,TaintedPath,,,,
+monopack-dependency-collector,collectDependency,packageName,,TaintedPath,yes,,,param+func
+mount-smbfs,mount,sharepath,,CommandInjection,,,,
+movies,load,file,(String) path of file to load.,TaintedPath,no,,,param+func+param doc
+mp3dat,stat,f,,TaintedPath,,,,
+mr-doc,generate,o,,TaintedPath,,,,
+mrapi-workspace,resolveConfig,cwd,,TaintedPath,,,,
+msee,parseFile,file,,TaintedPath,,,,
+mu2,compile,filename,"The name of the file to compile. If the filename
+starts with a '/', the file is assumed to be absolute, else it is
+relative to mu.root.
+",TaintedPath,,,,
+muhammara,PDFRStreamForFile,inPath,,TaintedPath,,,,
+multijson-config,parseFile,fname,,TaintedPath,,,,
+music_services_shield,executeScriptAsSudo,script,,CommandInjection,no,,,param+func
+mustache-express,create,directory,,TaintedPath,no,,,param+func
+mvn-artifact-download,download,destination,,TaintedPath,no,,,param+func
+myLib,boundProblem,unsafe,,CommandInjection,,,,
+mz,exists,filename,,TaintedPath,,,,
+nad,inject,nodeDir,,TaintedPath,,,,
+nano-gateway,nano-gateway,configPath,,TaintedPath,no,,,param
+native-css,convert,cssFile,,TaintedPath,,,,
+nativejsx,parse,file,"A path to and including the JSX file.
+",TaintedPath,,,,
+natural-synaptic,save,filename,,TaintedPath,,,,
+ncp,ncp,errs,,TaintedPath,,,,
+ndu,generateDependencyStats,cwd,,TaintedPath,,,,
+nesly-assembler,writeFile,filename,,TaintedPath,,,,
+nest-shopify,loadRequestDocument,filePath,,TaintedPath,no,,,param+func
+netrc,netrc,file,,TaintedPath,,,,
+nextmail,renderEmail,name,,TaintedPath,,,,
+nexus,readGit,appPath,,TaintedPath,no,,,param
+ng-parse-module,parse,file,,TaintedPath,no,,,param+func
+nicer-fs,exists,fileOrDir,,TaintedPath,no,,,param+func
+nixt,mkdir,path,,TaintedPath,no,,,param+func
+node-api-toolkit,node-api-toolkit,filePath,,TaintedPath,no,,,param
+node-dir,readFilesStream,dir,"path of dir containing the files to be read
+",TaintedPath,,,,
+node-librealsense,enableDeviceFromFile,fileName,"the playback file of the device
+",TaintedPath,,,,
+node-librealsense,writeFrameMetadataToFileAsync,path,"target file path
+",TaintedPath,,,,
+node-map-directory,node-map-directory,directory,,TaintedPath,,,,
+node-patternlibrary,node-patternlibrary,outFile,"Path to write to.
+",TaintedPath,,,,
+node-static,respondGzip,pathname,,TaintedPath,,,,
+node-telegram-bot-api,addStickerToSet,pngSticker,"Png image with the sticker, must be up to 512 kilobytes in size,
+dimensions must not exceed 512px, and either width or height must be exactly 512px
+",TaintedPath,no,,,param+param doc
+node-uploadx-src,truncateFile,path,,TaintedPath,,,,
+node-xml,parseFile,filename,,TaintedPath,,,,
+nodefy,convert,inputPath,,TaintedPath,,,,
+nodefy,convert,outputPath,,TaintedPath,,,,
+nodejs-ad-api,rootRequire,name,,TaintedPath,,,,
+nodejs-starter-kit,save,location,,TaintedPath,,,,
+nodelist,nodelist,nodelistPath,,TaintedPath,no,,,param
+nodeon-file,read,filepath,,TaintedPath,,,,
+nosqlite,rimraf,p,,TaintedPath,,,,
+notebook-generator,notebook-generator,output,,TaintedPath,no,,,param+func
+now-builders,getNowIgnore,path,,TaintedPath,,,,
+now-client,parseNowJSON,filePath,,TaintedPath,,,,
+npm-git-publish,publish,packageDir,,CommandInjection,yes,,,param+func
+npm-lifecycle,lifecycle,wd,,TaintedPath,,,,
+npmversion,createCommitGitIfNeeded,packageJsonVersion,,CommandInjection,,,,
+npmversion,getRemoteName,cwd,,TaintedPath,,,,
+npmversion,promisedSpawn,cwd,,TaintedPath,,,,
+npmversion,updateJsonFile,jsonFilePathOrEntry,,TaintedPath,no,,,param+func
+nshtools,cp,source,"the filename for the copy source
+",TaintedPath,no,,,param+func+param doc
+nuclide,createMultiLspLanguageService,command_,,TaintedPath,,,,
+nuclide,getGeneratedFileTypes,dirPath,,TaintedPath,,,,
+nuclio-ui,installRequire,src,"the source path of the intended module to import
+",TaintedPath,no,,,param+param doc
+o_O,bindRuleToElement,expressionString,,CodeInjection,no,,,param+func doc
+oas-kit,convertFile,filename,,TaintedPath,,,,
+obojobo-lib-utils,getOboNodeScriptPathsFromPackageByType,oboNodePackage,,TaintedPath,,,,
+observey,handleWatch,path,,TaintedPath,no,,,param+func
+office,getType,filename,,TaintedPath,,,,
+oh-crap,crap,dir,,TaintedPath,,,,
+oicq,Client,uin,,TaintedPath,,,,
+oneblog,createApp,basePath,,ReflectedXss,yes,,,param+func
+openapi-workspaces,parseOpenAPIFromRepoWithSourcemap,branch,,CommandInjection,,,,
+opensearch-dashboards,createDefault,repoRoot,,TaintedPath,,,,
+orientjs,createCommand,name,"The name of the command.
+",TaintedPath,,,,
+os-fonts,getFontsInDirectory,dir,"The directory to read
+",TaintedPath,,,,
+package-lookup,resolveDir,dir,,TaintedPath,,,,
+package-store,read,storePath,,TaintedPath,,,,
+packages-parser,parseFile,path,,TaintedPath,,,,
+pacscan,flatSyncFunction,pacscanPath,,TaintedPath,,,,
+pagemaki,getTemplate,name,"[description]
+",TaintedPath,,,,
+pandora,backupLog,file,,TaintedPath,no,,,param
+pandora,getStructureViaNewProcess,appDir,,TaintedPath,,,,
+pastebin-js,createPasteFromFile,filename,,TaintedPath,,,,
+pastebin-js,createPasteFromFile,filename,"Location of the filename
+",TaintedPath,,,,
+path-exists,path-exists,fp,,TaintedPath,,,,
+patron,RequireAllSync,dir,,TaintedPath,,,,
+pcjs,loadMap,sMapFile,,TaintedPath,no,,,param+func
+pdf-officegen,createDocument,wordFile,,TaintedPath,no,,,param+func
+periodicjs.core.utilities,async_run_cmd,cmd,"shell command
+",CommandInjection,,,,
+pi-utils,setCreds,ssid,"SSID of the network to connect to
+",CommandInjection,yes,,,param+func+param doc
+pk-lib-cfgapi,writeCfgSync,name,,TaintedPath,,,,
+plato,inspect,outputDir,,TaintedPath,,,,
+pln,startup,sessionsPath,,TaintedPath,,,,
+plugcore,getStats,filePath,,TaintedPath,no,,,param+func
+png-diff,outputDiff,destPath,,TaintedPath,,,,
+pnpm-shrinkwrap,pnpm-shrinkwrap,pkgPath,,TaintedPath,no,,,param
+pont-engine,generateFiles,dir,,TaintedPath,,,,
+portal-env,checkEnvironment,envName,,TaintedPath,,,,
+portal-env,sanityCheckDir,dirName,,TaintedPath,,,,
+portfinder,getSocket,path,,TaintedPath,no,,,param
+postgraphile,setBody,body,,ReflectedXss,no,,,param+func
+ppspider,downloadImg,saveDir,"图片保存目录
+",TaintedPath,no,,,param+func
+pquire,pquire,pth,,TaintedPath,,,,
+pre-push,exec,bin,"Binary that needs to be executed
+",CommandInjection,no,,,param+param doc
+preprocess,preprocessFile,destFile,,TaintedPath,no,,,param+func
+project-watchtower,getBuildConfig,root,,TaintedPath,,,,
+promise-spawner,promise_spawn,command,,CommandInjection,no,,,param
+proofable,verifyTrieWithSortedKeyValues,dotGraphOutputPath,"Graphviz Dot Graph output file path. Default: `undefined` (don't
+output)",TaintedPath,,,,
+protractor,compileFileClient,filename,,TaintedPath,,,,
+prpl-server,makeHandler,root,,TaintedPath,,,,
+pstream-json,parseFileAsStream,fileName,,TaintedPath,,,,
+pug,compileFileClient,filename,,TaintedPath,,,,
+pug-lint,checkDirectory,directoryPath,,TaintedPath,no,,,param+func
+pugify,pugify,file,,TaintedPath,,,,
+punch,readConfigFile,config_path,,TaintedPath,,,,
+pwabuilder-lib,getPackageInformation,packageName,,TaintedPath,,,,
+pwabuilder-lib,installPackage,packageName,,TaintedPath,yes,,,param+func
+qpp-measures-data,getMeasuresData,performanceYear,,TaintedPath,,,,
+quickthumb,static,root,,TaintedPath,,,,
+R2,exec,0,,TaintedPath,,,,
+r2pipe,syscmdj,command,,CommandInjection,no,,,param
+r3alb0t,openJSON,JSONFile,,TaintedPath,,,,
+rd,eachDirSync,dir,,TaintedPath,,,,
+react-app-alias,configFilePathSafe,configPath,,TaintedPath,,,,
+react-dev-utils,formatter,file,,TaintedPath,,,,
+react-jade,compileFile,filename,,TaintedPath,no,,,param+func
+react-native-code-push,launchInstalledApplication,appId,,CommandInjection,yes,,,param+func
+react-native-code-push,restartApplication,appId,,CommandInjection,,,,
+react-native-test-app,getAppName,packagePath,,TaintedPath,,,,
+read-file-relative,read,relativePath,,TaintedPath,no,,,param+func
+read-ini-file,sync,fp,,TaintedPath,,,,
+readdir,readSync,basePath,,TaintedPath,,,,
+recur-fs,mvSync,destination,,TaintedPath,,,,
+relaxedjs,masterToPDF,outputPath,,TaintedPath,,,,
+rematch-cli,init,projectName,,TaintedPath,,,,
+remote-merge,applyPackage,originalDir,,TaintedPath,,,,
+remote-merge,save,filePath,,TaintedPath,,,,
+removeNPMAbsolutePaths,removeNPMAbsolutePaths,filePath,,TaintedPath,no,,"named ""AbsolutePaths"" but is tainted",func
+request-capture-har,saveHar,fileName,,TaintedPath,,,,
+request-har-capture,saveHar,fileName,,TaintedPath,no,,,param+func
+request-prom,postFile,file,"the full path to the file or a stream.Readable.
+",TaintedPath,,,,
+resfet-dashboard,applyConfig,configPath,,TaintedPath,,,,
+reskript,run,file,,TaintedPath,,,,
+reskript,run,outDirectory,,TaintedPath,,,,
+resolve-link-target,getLinkTarget,linkPath,,TaintedPath,,,,
+resxclone,readXml,name,,TaintedPath,,,,
+revai-node-sdk,submitJobLocalFile,filepath,"Path to local file to be transcribed. Assumes the process has access to read this file.
+",TaintedPath,,,,
+rimtrans,saveXML,path,,TaintedPath,,,,
+rnx-kit,readPackage,pkgPath,,TaintedPath,,,,
+root,determineGoModuleName,dir,,TaintedPath,,,,
+root,evalInContext,expression,,CodeInjection,no,,,param+func
+rootpath,rootpath,filePath,,TaintedPath,,,,
+routing-controllers,handleError,error,,ReflectedXss,yes,,,param+func
+rsa-cracking,attack,keysDir,,TaintedPath,,,,
+rust,rust,config,,TaintedPath,,,,
+RxJS,callTimer,func,,CodeInjection,no,,,param
+safe-mkdir,mkdir,path,,TaintedPath,,,,
+salient,load,vocabFile,,TaintedPath,,,,
+salto-io,replaceContents,filename,,TaintedPath,,,,
+scaffolt,destroyFile,path,,TaintedPath,,,,
+scoped-bulk,bulk,dirname,,TaintedPath,,,,
+scp2,scp,src,,TaintedPath,,,,
+scroungejs,copy,filepathin,,TaintedPath,,,,
+scroungejs,persistrootcachemapfile,rootname,,TaintedPath,,,,
+scroungejs,writesilent,filepath,,TaintedPath,,,,
+scxml,analyze,docUrl,,TaintedPath,,,,
+second-bundler,getStyles,moduleRoot,,TaintedPath,,,,
+selenium-download,ensure,binPath,,TaintedPath,no,,,param
+send-data,send,opts,,ReflectedXss,no,,shown in README: `opts` can be a str (i.e. the body) a object (with a `body` attribute),func+README
+sensorjs,discoverThingsOnNetwork,networkName,,TaintedPath,,,,
+serve-marked,serveMarked,markdown,,ReflectedXss,yes,,serve markdown file,param+func
+serverless-plugin-composed-vars,findFileExtension,fileName,"The path and file name, excluding extension",TaintedPath,,,,
+serverless-plugin-composed-vars,processCustomVariables,stage,,TaintedPath,,,,
+serverless-slackbot,load,skillsPath,,TaintedPath,,,,
+serverless-telegram,startDevServer,projectOrFunctionDirOrHandlerPath,,TaintedPath,,,,
+sey,initFile,file,,TaintedPath,,,,
+sfb-skill-package,ABCDebugger,projectPathArg,,TaintedPath,,,,
+sfb-skill-package,createLocalizationExtension,contentSource,,TaintedPath,,,,
+sfb-skill-package,getAplCommandsFilePath,locale,,TaintedPath,,,,
+sfb-skill-package,getAplTemplatesFilePath,locale,,TaintedPath,no,,,func
+sfmc-heroku-async-communication,scp,dest,,TaintedPath,no,,,param+func
+sha,getSync,file,,TaintedPath,no,,,param+func
+sharp11,import,filename,,TaintedPath,,,,
+shell-utils,execAsyncRead,command,,CommandInjection,,,,
+shimly,shim,destination,,TaintedPath,,,,
+simctl,boot,device,,CommandInjection,yes,,,param+func
+simctl,del,device,,CommandInjection,yes,,,param+func
+simctl,launch,appIdentifier,,CommandInjection,yes,,run Xcode's simctl utility on OS X,param+func
+simctl,launch,device,,CommandInjection,,,,
+simctl,uninstall,appIdentifier,,CommandInjection,,,,
+simple-plist,readFile,aFile,,TaintedPath,,,,
+simple-plist,writeFileSync,aFile,,TaintedPath,no,,,param+func
+sketch-driver,runFile,filePath,,TaintedPath,,,,
+slackin-extended,slackin,letsencrypt,,ReflectedXss,yes,,,param+func
+slackquizbot,startQuiz,quizId,,TaintedPath,,,,
+slm,render,src,,CodeInjection,no,,another HTML template engine,param+func+README
+smart-spawn,smartSpawn,targetCwd,,TaintedPath,,,,
+sol-merger,merge,file,,TaintedPath,,,,
+spaghetti,streamVideoWithAudio,source,,TaintedPath,,,,
+sparky,analogWrite,value,,CommandInjection,,,,
+sparrow,addComponent,path,,TaintedPath,,,,
+sparrow,setImmediate,e,,CodeInjection,no,,a built-in function with the same name `setImmediate` exists (it takes a callback or a piece of code to run on the next iteration of the event loop),func
+speedline,speedline,timeline,,TaintedPath,,,,
+spoof,setInterfaceMAC,device,,CommandInjection,yes,,,param+func
+sppull,createFolder,downloadRoot,,TaintedPath,no,,root=root dir,param+func
+spritesmith,Spritesmith,engine,,TaintedPath,,,,
+spud,convert,source,"Can be a file path, Buffer, or Stream
+",TaintedPath,,,,
+srcgen,run,saveInputDataPath,,TaintedPath,no,,,param
+srcgen,run,workPath,,TaintedPath,no,,,param
+srcgen,save,fileName,,TaintedPath,,,,
+ssb-db,init,path,,TaintedPath,,,,
+ssh2-sftp-client,downloadDir,dstDir,"local destination directory
+",TaintedPath,,,,
+ssh2-streams,fastPut,localPath,,TaintedPath,,,,
+sstk,readLines,filename,,TaintedPath,no,,,param+func
+sstk,writeToFile,filename,,TaintedPath,,,,
+st,file,p,,TaintedPath,no,,st is for serving static file,func
+statique,readFile,file,"The relative path to the file.
+",TaintedPath,no,,,param+func+param doc
+steamshovel,processFile,file,,TaintedPath,no,,,param+func
+storage-core,createReadStream,path,,TaintedPath,,,,
+streaming-data-solution,sleep,seconds,,CommandInjection,yes,,,param+func
+strider-extension-loader,initConfig,csspath,,TaintedPath,,,,
+strider-extension-loader,initUserConfig,csspath,,TaintedPath,,,,
+strif,fromFile,filePath,,TaintedPath,,,,
+strips,load,domainPath,,TaintedPath,,,,
+suman-utils,findApplicablePathsGivenTransform,transformPath,,TaintedPath,,,,
+super-easy-forms,CheckForm,formName,,TaintedPath,,,,
+supercolliderjs,spawnProcess,execPath,"path to sclang
+",TaintedPath,,,,
+svcorelib,pipeFile,filePath,,TaintedPath,,,,
+svcorelib,readdirRecursiveSync,folder,,TaintedPath,,,,
+swagger-injector,serveFile,path,,TaintedPath,,,,
+swagger-ui-express,setup,customCss,,ReflectedXss,yes,,,param+func
+swagger-ui-express,setup,customfavIcon,,ReflectedXss,yes,,,param+func
+symbol-bootstrap,download,url,,TaintedPath,no,,,param+func
+symbol-bootstrap,generateConfiguration,copyTo,,TaintedPath,,,,
+symbol-bootstrap,run,customCertFolder,,TaintedPath,no,,,param
+systemjs-builder,loadConfigSync,configFile,,TaintedPath,,,,
+sz-iptools,delAddress,netmask,,CommandInjection,,,,
+tacks,generateFromDir,dir,,TaintedPath,,,,
+tadaa,playCorrectSound,audioPlayer,,CommandInjection,,,,
+tap-runner,runFiles,dir,,TaintedPath,,,,
+tar.gz,createReadStream,directory,"The directory to be tarballed
+",TaintedPath,,,,
+teen_process,exec,cwd,,TaintedPath,,,,
+text-watermark,addWatermark,source,"original image path
+",TaintedPath,no,,explained in docstring: source is original image path,param+param doc
+the-a11y-machine,start,bootstrap,,TaintedPath,no,,explained in README: Bootstrap file = configuration file,README
+think-helper,chmod,p,"[path]
+",TaintedPath,,,,
+tiapp,walk,p,,TaintedPath,,,,
+TiddlySeq,buildOnlineHTML,htmlName,"HTML名称，空或者不填则默认为'index.html'
+",CommandInjection,,,,
+tl-create,fetchSTL,filename,,TaintedPath,,,,
+tmplconv,transplant,dest,,TaintedPath,,,,
+todo-md,load,filepath,,TaintedPath,,,,
+torrent-stream,torrentStream,path,,TaintedPath,,,,
+total.js,append,filename,,TaintedPath,,,,
+total.js,copy,filename,,TaintedPath,,,,
+total.js,mkdir,p,,TaintedPath,,,,
+total4,exists,path,,TaintedPath,,,,
+total4,mkdir,p,,TaintedPath,,,,
+tracerbench,printToPDF,outputPath,,TaintedPath,,,,
+tractor,createDir,directoryPath,,TaintedPath,,,,
+tractor,tractor,configPath,,TaintedPath,,,,
+truffle-debug-utils,gatherArtifacts,contracts_build_directory,,TaintedPath,,,,
+trustchain-sdk,signFile,filePath,,TaintedPath,,,,
+trustchain-sdk,verifyFile,file,,TaintedPath,,,,
+trymodule,trymodule,installPath,,TaintedPath,,,,
+tsconfig,resolveSync,cwd,,TaintedPath,,,,
+tsconfig-extends,load_file_sync,cwd,,TaintedPath,,,,
+tsify,tsify,typescript,,TaintedPath,,,,
+tsmetrics-core,getMetrics,fileName,,TaintedPath,,,,
+tty.js,exists,file,,TaintedPath,,,,
+tuft,static,path,,TaintedPath,,,,
+tumblr,main,output_directory,,TaintedPath,,,,
+tyfon-server,router,api,,ReflectedXss,yes,,,param+func
+typed-css-modules,create,filePath,,TaintedPath,,,,
+typescript-package,getPackageJson,packageDir,,TaintedPath,,,,
+ucompress,JS,initialDest,,TaintedPath,no,,,param+func doc
+uglify-js,readReservedFile,filename,,TaintedPath,,,,
+uglify-php,minify,file_value,,TaintedPath,,,,
+uirecorder,startRecorder,cmdFilename,,TaintedPath,no,,,param
+unquire,async,path,,TaintedPath,no,,,param
+uo-node-utils,uo-node-utils,filePath,,TaintedPath,no,,,param
+upem,upem,pPackageInputFileName,,TaintedPath,,,,
+uplift-csv-cup,init,file,,TaintedPath,no,,,param
+upstream-report,report,directory,,TaintedPath,,,,
+userscript-utils,fromFile,file,"Path to the file
+",TaintedPath,no,,,param+func+param doc
+utile,requireDirLazy,directory,,TaintedPath,no,,,param+func
+utilities,cpR,toPath,The destination path to copy to,TaintedPath,no,,,param+param doc
+utils,readFiles,dir,,TaintedPath,,,,
+vash,__express,filepath,,TaintedPath,,,,
+VendorManager,deserialize,value,,CodeInjection,yes,,generic names,param+func
+versiony,with,file,,TaintedPath,,,,
+views,renderStatus,message,{String} A custom error message.,ReflectedXss,yes,,,param+func+param doc
+views,renderStatus,code,"{Number} Status code
+",ReflectedXss,yes,,,param+func+param doc
+vscode-extensions,activate,logPath,,TaintedPath,,,,
+vue-to-react,transform,targetPath,,TaintedPath,,,,
+wat,scaffoldDir,dir,,TaintedPath,,,,
+watchy,watchy,patterns,,TaintedPath,,,,
+wbn,addFile,file,,TaintedPath,,,,
+web-node,load,pluginPath,"Path to given plugin.
+",TaintedPath,,,,
+webmap-hover-template,getLocale,key,,TaintedPath,,,,
+webmate-sdk-js,uploadImageToDeviceAndSetForCameraSimulationWithFilePath,imageFilePath,"File path to image file.
+",TaintedPath,,,,
+webpack-cdn-plugin,getVersionInNodeModules,pathToNodeModules,,TaintedPath,,,,
+webppl,prepare,code,,CodeInjection,no,,to compile and run a probabilistic programming language,param+README
+wepy,wepy,eslintPath,,TaintedPath,,,,
+wetland,remove,name,,TaintedPath,no,,,param+func
+wikipedia-preview,getPreviewHtml,lang,,TaintedPath,,,,
+win-spawn,spawn,command,,CommandInjection,,,,
+woods,initialize,directory,,TaintedPath,no,,,param
+workspace-tools,getChangesBetweenRefs,cwd,,TaintedPath,no,,,param
+workspace-tools,getDefaultRemote,cwd,,TaintedPath,no,,,param
+workspace-tools,getWorkspaces,cwd,,TaintedPath,,,,
+workspace-tools,init,cwd,,TaintedPath,,,,
+ws-img,parseFromFile,file,,TaintedPath,,,,
+x-configs,F,filename,"The file name to require the config from
+",TaintedPath,,,,
+x509,verify,certPath,,TaintedPath,,,,
+xlsx-template,substituteImage,substitution,,TaintedPath,,,,
+xmind,Zipper,path,,TaintedPath,,,,
+xod-deploy-bin,updateIndexes,wsBundledPath,,TaintedPath,,,,
+xod-deploy-bin,updateIndexes,wsPath,,TaintedPath,,,,
+xregexify,xregexify,file,,TaintedPath,no,,,param
+yalc,readPackageManifest,workingDir,,TaintedPath,,,,
+yalc,readSignatureFile,workingDir,,TaintedPath,,,,
+yargs,Argv,cwd,,TaintedPath,,,,
+yeoman-assert,jsonFileContent,filename,,TaintedPath,,,,
+yeoman-assert,noJsonFileContent,filename,,TaintedPath,,,,
+yeoman-test,setUpTestDirectory,dir,"path to the test directory
+",TaintedPath,,,,
+yocto-logger,addDailyRotateTransport,e,,TaintedPath,,,,
+zapier-platform-core,createLambdaHandler,appRawOrPath,,TaintedPath,,,,
+zents,readDir,dir,,TaintedPath,no,,,param+func

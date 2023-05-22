@@ -1,0 +1,11 @@
+| pkg1 | 1.0.0 | pkg1 | x | CodeInjection | The string to evaluate. | tests/mining/pkg1/index.js | 6 |
+| pkg2 | 1.0.0 | Point | x | None | The first parameter.\n | tests/mining/pkg2/main.mjs | 45 |
+| pkg2 | 1.0.0 | Point | y | CodeInjection | The second parameter. | tests/mining/pkg2/main.mjs | 46 |
+| pkg2 | 1.0.0 | id | x | None |  | tests/mining/pkg2/main.mjs | 22 |
+| pkg2 | 1.0.0 | pkg2 | filename | TaintedPath |  | tests/mining/pkg2/main.mjs | 33 |
+| pkg2 | 1.0.0 | run | cmd | CommandInjection |  | tests/mining/pkg2/main.mjs | 4 |
+| pkg2 | 1.0.0 | test | code | CodeInjection |  | tests/mining/pkg2/main.mjs | 17 |
+| pkg2 | 1.0.0 | test | runme | CommandInjection |  | tests/mining/pkg2/main.mjs | 14 |
+| pkg2 | 1.0.0 | test | x | CodeInjection |  | tests/mining/pkg2/main.mjs | 11 |
+| pkg2 | 1.0.0 | test | y | None |  | tests/mining/pkg2/main.mjs | 12 |
+| pkg2 | 1.0.0 | test | z | None |  | tests/mining/pkg2/main.mjs | 13 |
