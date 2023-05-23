@@ -101,7 +101,7 @@ and on the logging flows by running
 ./fluffy.py train -t neural data/logging_flows_train_set.csv -w --logging-flow
 ```
 
-Evaluate the model by on the param-sink flows running
+Evaluate the model on the param-sink flows by running
 
 ```sh
 ./fluffy.py eval detector_nn.pkl --model-path models/m1_final/checkpoints/model-epoch\=00-val_loss\=0.596.ckpt 
