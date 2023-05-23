@@ -20,7 +20,7 @@ typical (and hence most likely unproblematic) flows from rare (and hence perhaps
 unexpected) flows.
 
 A detailed description of the approach is available in the paper [Beware of the
-Unexpected: Bimodal Taint Analysis](https://arxiv.org/abs/2301.10545).
+Unexpected: Bimodal Taint Analysis](https://arxiv.org/abs/2301.10545) (ISSTA'23).
 
 ## Environment
 
